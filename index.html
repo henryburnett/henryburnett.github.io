@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Henry Burnett | Web Development Portfolio</title>
+
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="portfolio.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js" charset="UTF-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" charset="UTF-8"></script>
+
+
+<script type="text/javascript" charset="UTF-8">
+$(document).ready(function(){
+console.log("ready");
+$("#nav").localScroll({duration:800});
+})
+</script>
+</head>
+<!-- BREAK BETWEEN HEAD AND BODY -->
+<body>
+<div class="iOS-background"></div>
+	<!-- HEADER -->
+	<div class="header-box container-fluid">
+		<nav>
+		<ul id="nav">
+
+			<li class="click"><a href="#home" id="homeClick">Home</a></li>
+			<li class="click"><a href="#about" id="aboutClick">About</a></li>
+			<li class="click"><a href="#portfolio" id="portfolioClick">Work</a></li>
+			<li class="click"><a href="#contact" id="contactClick">Contact</a></li>
+			<li class="logo click"><img src="images/logo_small.png" class="logo-small"></li>
+
+		</ul>
+	    </nav>
+	</div>
+
+<!-- HOME --> <span class="anchor" id="home"></span>
+
+    	<div class="home-div">
+        	<div class="home-background">
+        		<img src="images/logo.png">
+        	</div>
+        </div>
+
+<!-- ABOUT --> <span class="anchor" id="about"></span>
+
+	<div class="about">
+	  <h2>ABOUT</h2>
+		<div class="about-text">
+		<p>
+		     <img src="https://preview.ibb.co/frWpEa/henry_prof_pic.jpg" alt="photo of Henry Burnett" class="about-img">
+		  My name is Henry Burnett, and I am a freelance web developer based in Burlington, Vermont. I provide boutique web development services with a focus on website redesign and striking aesthetics that help small businesses grow.<br /><br />I also offer professional copywriting/editing services on a per-project basis. Please contact me for pricing or to schedule a consultation.</p>
+		</div>
+	</div>
+
+<!-- PORTFOLIO ("WORK") --> 	<span class="anchor" id="portfolio"></span>
+
+	<div class="portfolio">
+	<br />
+	<h2>WORK</h2>
+	    <div class="two-container-wrapper">
+		    <h3>WIKIPEDIA VIEWER</h3>
+		<div class="container left text">
+        <p>Connects via AJAX call to MediaWiki API; loads preliminary results as user types; iterates through JSON data to construct clickable search results (links); also allows user to view "Random Search" page if desired
+			</p>
+		</div>
+		<div class="container right image">
+			<a href="wikipedia_viewer.html" target="_blank"><img src="images/wiki.png" alt="Wikipedia Viewer" width="400" height="250"></a>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+
+	<div class="two-container-wrapper">
+	  <h3>LOCAL WEATHER APP</h3>
+		<div class="container right text">
+			<p>Requests user location data from browser à la navigator.geolocation; makes AJAX calls to two API weather services, one for current conditions and one for forecast; displays weather data with corresponding icon and Fahrenheit/Celsius toggle </p>
+		</div>
+
+		<div class="container left image">
+			<a href="weather_app.html" target="_blank"><img src="images/weather.png" alt="Local Weather App" width="400" height="250"></a>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+		<h3>COMING SOON</h3>
+        	<div class="two-container-wrapper">
+    			More web dev samples coming soon!
+            </div>
+
+	<div class="end-spacer"></div>
+    </div>
+
+<!-- CONTACT --> <span class="anchor" id="contact"></span>
+    <div class="contact">
+		<div class="contact-info">
+		<h2>CONTACT</h2>
+			<div class="contact-icons-div">
+				<div class="two-icon-wrapper">
+    				<a href="https://www.facebook.com/henry.burnett.54" target="_blank" class="contact-icon"><img src="images/facebook-256.png" alt="Link to Facebook" width="33%"></a>
+
+    				<a href="tel:+19105993725" target="_blank" class="contact-icon"><img src="images/phone-icon.png" alt="Call Henry" width="33%"></a>
+			    </div>
+			<div class="two-icon-wrapper">
+				<a href="https://github.com/hburn11" target="_blank" class="contact-icon"><img src="images/github-icon.png" alt="Link to GitHub" width="33%"></a>
+
+				<a href="mailto:henry@henryburnett.net" class="contact-icon"><img src="images/email-icon.png" alt="Send an Email" width="33%"></a>
+			</div>
+		</div>
+	 </div>
+</div>
+
+
+<!-- FOOTER -->
+
+	<div class="footer">
+		<h4>&copy; 2017 Henry Burnett. All rights reserved.</h4>
+	</div>
+
+
+</body>
+</html>
