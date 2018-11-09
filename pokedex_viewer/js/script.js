@@ -81,7 +81,7 @@ let runProgram = function(){
     $("#list-container").empty();
     $('#search-bar').val('');
     let pokedexName = $(this).val();
-    let link = "https://pokeapi.co/api/v2/pokedex/" + pokedexName;
+    let link = "https://pokeapi.co/api/v2/pokedex/" + pokedexName + '/';
     generateList(link);
   });
 
